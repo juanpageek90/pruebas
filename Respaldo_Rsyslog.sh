@@ -22,7 +22,7 @@ sleep 10
 tar -czvf Respaldos_Syslog_$fecha.tar.gz Respaldos_$fecha/
 sleep  10
 
-#Envio de respaldos
+#Envio de respaldos - (En espera)
 #scp root@10.222.3.xxx:/home/Respaldos_Syslog/
 #sleep 10
 
