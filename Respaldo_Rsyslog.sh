@@ -21,3 +21,8 @@ sleep 10
 #Se crea un tar.gz con la carpeta que contiene todos los archivos
 tar -czvf Respaldos_Syslog_$fecha.tar.gz Respaldos_$fecha/
 sleep  10
+
+
+#Envio de respaldos
+#scp root@10.222.3.xxx:/home/Respaldos_Syslog/
+#sleep 10
