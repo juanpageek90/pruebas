@@ -8,3 +8,5 @@ db=tu_base_de_datos
 
 #Respaldar la base de datos
 mysqldump -u $user -p$pass $db > Respaldo"_"$fecha.sql
+sleep 10
+
