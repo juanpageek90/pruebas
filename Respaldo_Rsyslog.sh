@@ -29,3 +29,12 @@ sleep  10
 #Eliminacion de archivos
 rm -rf Respaldos_Syslog_$fecha.tar.gz Respaldos_$fecha/
 sleep 10
+
+#Limpieza de base de datos
+mysql -u $user -p$pass << eof
+use Syslog;
+truncate table SystemEvents;
+eof
+
+sleep 10
+exit
