@@ -25,3 +25,7 @@ sleep  10
 #Envio de respaldos
 #scp root@10.222.3.xxx:/home/Respaldos_Syslog/
 #sleep 10
+
+#Eliminacion de archivos
+rm -rf Respaldos_Syslog_$fecha.tar.gz Respaldos_$fecha/
+sleep 10
