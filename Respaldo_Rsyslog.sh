@@ -3,7 +3,7 @@
 #Variables generales a usar de MySQL
 user=tu_usuario
 pass=tu_password
-fecha=$(date)
+fecha=$(date +"%y-%m-%d")
 db=tu_base_de_datos
 
 #Respaldar la base de datos
@@ -32,7 +32,7 @@ sleep 10
 
 #Limpieza de base de datos
 mysql -u $user -p$pass << eof
-use Syslog;
+use $db;
 truncate table SystemEvents;
 eof
 
